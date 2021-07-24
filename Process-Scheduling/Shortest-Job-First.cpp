@@ -82,9 +82,9 @@ int main()
       {
 
             turn_around_time[i]=completion_time[i]-arrival_time[i];
-            total_tat=total_tat+turn_around_time[i];
+            total_tat+=turn_around_time[i];
             waiting_time[i]=turn_around_time[i]-cpu_time[i];
-            total_wt=total_wt+waiting_time[i];
+            total_wt+=waiting_time[i];
       }
 
       average_tat=total_tat/process_num;
@@ -107,3 +107,4 @@ int main()
 
     return 0;
 }
+
