@@ -80,9 +80,9 @@ int main()
 
     for(int i=0;i<process_num;i++)
     {
-    cout<<"Process "<< i+1 << ": Waiting Time: "<<waiting_time[i] << " " <<"Turnaround Time: " <<turnaround_time[i]<<endl;
-    total_wt+=waiting_time[i];
-    total_tat+=turnaround_time[i];
+        cout<<"Process "<< i+1 << ": Waiting Time: "<<waiting_time[i] << " " <<"Turnaround Time: " <<turnaround_time[i]<<endl;
+        total_wt+=waiting_time[i];
+        total_tat+=turnaround_time[i];
     }
     cout<<endl;
 
