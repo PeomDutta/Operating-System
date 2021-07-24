@@ -92,7 +92,6 @@ int main()
 
 
 
-
     ///--------------Output Print------------///
 
     for(int i=0;i<process_num;i++)
