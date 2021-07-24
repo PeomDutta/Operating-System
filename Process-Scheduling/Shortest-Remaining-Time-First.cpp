@@ -58,7 +58,9 @@ int main()
         for(int i=0; i<process_num; i++)
         {
             if(arrival_time[i]<=time && cpu_time[i]<cpu_time[index] && cpu_time[i]>0 )
+            {
                 index=i;
+            }
         }
         cpu_time[index]--;
 
@@ -67,7 +69,7 @@ int main()
             count++;
             end_time=time+1;
             completion_time[index] = end_time;
-            turnaround_time[index] = end_time - arrival_time[index];
+            turnaround_time[index] = completion_time[index] - arrival_time[index];
             waiting_time[index] = turnaround_time[index] - burst_time[index];
         }
         time++;
@@ -79,8 +81,8 @@ int main()
     for(int i=0;i<process_num;i++)
     {
     cout<<"Process "<< i+1 << ": Waiting Time: "<<waiting_time[i] << " " <<"Turnaround Time: " <<turnaround_time[i]<<endl;
-    total_wt=total_wt+waiting_time[i];
-    total_tat=total_tat+turnaround_time[i];
+    total_wt+=waiting_time[i];
+    total_tat+=turnaround_time[i];
     }
     cout<<endl;
 
