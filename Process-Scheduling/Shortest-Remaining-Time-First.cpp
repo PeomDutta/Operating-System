@@ -92,6 +92,7 @@ int main()
     cout<<"Average Turnaround Time: "<<average_tat<<endl;
     cout<<"Average Waiting Time: "<<average_wt<<endl;
 
-    return 0;
-    
+    return 0;   
 }
+
+
